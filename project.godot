@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="PrzygodyStimpusia"
+run/main_scene="uid://dr0fhp8qls1if"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PhantomCameraManager="*uid://duq6jhf6unyis"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
 
 [physics]
 
