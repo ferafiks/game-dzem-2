@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dr0fhp8qls1if"]
 
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_gojnm"]
-[ext_resource type="Script" uid="uid://bdrht8oihnlx4" path="res://steampussy.gd" id="2_1c2mv"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -17,15 +16,19 @@ shape = SubResource("WorldBoundaryShape3D_1c2mv")
 debug_color = Color(0.08708038, 0.50495064, 7.70092e-07, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1390047189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009689331, 0.008531094, 0.0010175705)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10857344, 0.19109976, 0.057634845)
 mesh = SubResource("PlaneMesh_gojnm")
 
-[node name="steampussy" parent="." unique_id=816369272 instance=ExtResource("1_gojnm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1344246, 0)
-script = ExtResource("2_1c2mv")
-
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1207708050]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.6210384, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5308228, 13.915747, 0)
 light_color = Color(1, 1, 0.14901961, 1)
 omni_range = 4096.0
 omni_attenuation = -0.961
+
+[node name="steampussy" parent="." unique_id=816369272 instance=ExtResource("1_gojnm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, 3.3954003, 2.50023)
+
+[node name="Camera3D" parent="steampussy" index="3" unique_id=1989415634]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 9.536743e-07, 5.5406947, 3.6975923)
+
+[editable path="steampussy"]
