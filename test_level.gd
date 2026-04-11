@@ -5,8 +5,3 @@ func lose():
 	var lose_inst = lose_screen.instantiate()
 	add_child(lose_inst)
 	get_tree().paused = true
-
-
-
-func _on_timer_timeout() -> void:
-	lose()

@@ -11,3 +11,9 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if "Crate" in body.get_name():
 		if body.target_customer == self:
 			body.delivered()
+			
+
+
+
+func _on_timer_timeout() -> void:
+	get_tree().current_scene.lose()
