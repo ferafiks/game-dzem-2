@@ -36,7 +36,7 @@ top_level = true
 script = ExtResource("4_p1h76")
 
 [node name="Hand" type="Marker3D" parent="." unique_id=1524337348]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, -0.01599437, 0.96945035)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=862536679]
 
