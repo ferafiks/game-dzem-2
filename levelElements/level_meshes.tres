@@ -1,0 +1,4 @@
+[gd_resource type="MeshLibrary" format=3 uid="uid://cdxvepcuknpyh"]
+
+[resource]
+metadata/_editor_source_scene = "res://levelElements/level_meshes.tscn"
