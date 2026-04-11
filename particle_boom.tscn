@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dsbsxc84sp8lp"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uep05"]
+emission_shape = 2
+emission_sphere_radius = 1.5
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 56.67
+radial_accel_max = 99.99999
+
+[sub_resource type="TextMesh" id="TextMesh_mo0jf"]
+text = "BOOM"
+font_size = 127
+uppercase = true
+
+[node name="GPUParticles3D2" type="GPUParticles3D" unique_id=1201064849]
+visible = false
+emitting = false
+amount = 16
+lifetime = 0.5
+interp_to_end = 0.5
+one_shot = true
+speed_scale = 1.5
+explosiveness = 0.69
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_uep05")
+draw_pass_1 = SubResource("TextMesh_mo0jf")

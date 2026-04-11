@@ -1,10 +1,20 @@
 [gd_scene format=3 uid="uid://dsvbntut4fm2u"]
 
 [ext_resource type="Script" uid="uid://c088eseierot8" path="res://crate.gd" id="1_uep05"]
+[ext_resource type="PackedScene" uid="uid://dsbsxc84sp8lp" path="res://particle_boom.tscn" id="2_mo0jf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4417n"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_uep05"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uep05"]
+emission_shape = 2
+emission_sphere_radius = 1.5
+gravity = Vector3(0, 0, 0)
+radial_accel_min = 56.67
+radial_accel_max = 99.99999
+
+[sub_resource type="SphereMesh" id="SphereMesh_uep05"]
 
 [node name="Crate" type="RigidBody3D" unique_id=1698030415 groups=["grabbale"]]
 disable_mode = 1
@@ -24,3 +34,18 @@ text = "BOX."
 
 [node name="CrateTopMarker3D" type="Marker3D" parent="." unique_id=455581682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=372493948]
+visible = false
+emitting = false
+amount = 32
+lifetime = 0.5
+interp_to_end = 0.5
+one_shot = true
+speed_scale = 1.5
+explosiveness = 0.69
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_uep05")
+draw_pass_1 = SubResource("SphereMesh_uep05")
+
+[node name="GPUParticles3D2" parent="." unique_id=1201064849 instance=ExtResource("2_mo0jf")]

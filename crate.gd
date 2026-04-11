@@ -1,5 +1,5 @@
 extends RigidBody3D
-
+@export var target_customer: StaticBody3D
 
 # Called when the node enters the scene tree for the first time.
 func take(node_pos):
@@ -15,3 +15,15 @@ func take(node_pos):
 func drop():
 	process_mode = Node.PROCESS_MODE_ALWAYS 
 	print('DROPPED: ', self)
+	#await get_tree().create_timer(2.0).timeout
+	#delivered()
+func delivered():
+	var rodzenstwo_load = preload("res://particle_boom.tscn") 
+	var rodzenstwo = rodzenstwo_load.instantiate()
+	rodzenstwo.position = position
+	rodzenstwo.visible = true
+	rodzenstwo.emitting = true
+	add_sibling(rodzenstwo)
+	queue_free()
+	
+	
