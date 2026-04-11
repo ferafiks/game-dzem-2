@@ -25,3 +25,19 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 	move_and_slide()
+	
+	
+	#moevement
+	if Input.is_action_just_pressed("interact"):
+		for thing in $Area3D.get_overlapping_bodies():
+			print(thing)
+			if thing.is_in_group("grabbale"):
+				if $Hand.get_child_count() == 0:
+					thing.reparent($Hand)
+					break
+				else:
+					#drop
+					$Hand.get_child(0).reparent($'..')
+					break
+	
+	

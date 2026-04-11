@@ -12,6 +12,10 @@ albedo_color = Color(1, 0, 1, 1)
 material = SubResource("StandardMaterial3D_8tnbq")
 cap_bottom = false
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fm8vb"]
+height = 3.2612305
+radius = 2.0878906
+
 [node name="steampussy" type="CharacterBody3D" unique_id=816369272]
 script = ExtResource("1_fm8vb")
 
@@ -33,3 +37,9 @@ script = ExtResource("4_p1h76")
 
 [node name="Hand" type="Marker3D" parent="." unique_id=1524337348]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, -0.01599437, 0.96945035)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=862536679]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1297166813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15551758, 0)
+shape = SubResource("CylinderShape3D_fm8vb")

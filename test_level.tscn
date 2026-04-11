@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dr0fhp8qls1if"]
 
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_gojnm"]
+[ext_resource type="PackedScene" uid="uid://dsvbntut4fm2u" path="res://crate.tscn" id="2_1c2mv"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -30,5 +31,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, 3.3954003, 2.50
 
 [node name="Camera3D" parent="steampussy" index="3" unique_id=1989415634]
 transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 9.536743e-07, 5.5406947, 3.6975923)
+
+[node name="Crate" parent="." unique_id=1698030415 instance=ExtResource("2_1c2mv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44380522, -2.1600285)
+
+[node name="Crate2" parent="." unique_id=2084052760 instance=ExtResource("2_1c2mv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2743149, 1.3170943, -4.911859)
 
 [editable path="steampussy"]
