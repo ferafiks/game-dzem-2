@@ -1,9 +1,102 @@
 [gd_scene format=3 uid="uid://dqcf7l7lg7l58"]
 
-[node name="Control" type="Control" unique_id=1463042026]
+[ext_resource type="Texture2D" uid="uid://coucwqyek5jyb" path="res://ui_assets/ui_steampuś/Rectangle 1.svg" id="1_o3gpn"]
+[ext_resource type="Texture2D" uid="uid://bct0vajbgjogs" path="res://ui_assets/ui_steampuś/Rectangle 2.svg" id="2_2o7sm"]
+[ext_resource type="Texture2D" uid="uid://4yr2fobgubs5" path="res://ui_assets/ui_steampuś/Rectangle 3.svg" id="3_b51rn"]
+[ext_resource type="Texture2D" uid="uid://xu3llxe4js1y" path="res://ui_assets/ui_steampuś/Rectangle 4.svg" id="4_siyy1"]
+[ext_resource type="Texture2D" uid="uid://cis6ibflxu7ay" path="res://ui_assets/ui_steampuś/Rectangle 5.svg" id="5_1c510"]
+[ext_resource type="FontFile" uid="uid://qjs834eueehm" path="res://ui_assets/quantico/Quantico-Bold.ttf" id="5_2o7sm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b51rn"]
+font = ExtResource("5_2o7sm")
+font_size = 34
+font_color = Color(0, 0, 0, 1)
+
+[node name="Main_menu" type="Control" unique_id=1463042026]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Tło" type="PanelContainer" parent="." unique_id=259627967]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Rectangle1" type="Sprite2D" parent="Tło" unique_id=1749607004]
+position = Vector2(577, 325)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_o3gpn")
+
+[node name="Rectangle2" type="Sprite2D" parent="Tło" unique_id=1600938781]
+position = Vector2(572.5, 325.2)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_2o7sm")
+
+[node name="Rectangle3" type="Sprite2D" parent="Tło" unique_id=1804068414]
+position = Vector2(574.5, 332.19998)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_b51rn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=440129589]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.095000006
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+grow_vertical = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=334437757]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/MarginContainer" unique_id=486935433]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("4_siyy1")
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/TextureButton" unique_id=225089029]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "START"
+label_settings = SubResource("LabelSettings_b51rn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=1477420977]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer2" unique_id=1373566547]
+layout_mode = 2
+texture_normal = ExtResource("5_1c510")
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=901775400]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer3" unique_id=1069093888]
+layout_mode = 2
+texture_normal = ExtResource("5_1c510")
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer" unique_id=1512684620]
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer4" unique_id=696461899]
+layout_mode = 2
+texture_normal = ExtResource("5_1c510")

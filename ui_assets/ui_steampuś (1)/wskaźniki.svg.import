@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://14f3ht376ij0"
-path="res://.godot/imported/Rectangle 7.png-2f08b4db484fbb68015a53eef6906143.ctex"
+uid="uid://dsjjvqr7xbnlc"
+path="res://.godot/imported/wskaźniki.svg-a20648f2c43a7dd3320d407fc18ac2d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GUZIKI_BASE_HOVER_ONCLICK/Rectangle 7.png"
-dest_files=["res://.godot/imported/Rectangle 7.png-2f08b4db484fbb68015a53eef6906143.ctex"]
+source_file="res://ui_assets/ui_steampuś (1)/wskaźniki.svg"
+dest_files=["res://.godot/imported/wskaźniki.svg-a20648f2c43a7dd3320d407fc18ac2d9.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

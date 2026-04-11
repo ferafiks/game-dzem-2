@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://vuap05imoy04"]
+
+[ext_resource type="Texture2D" uid="uid://4yr2fobgubs5" path="res://ui_assets/ui_steampuś/Rectangle 3.svg" id="1_waa4j"]
+[ext_resource type="Texture2D" uid="uid://bct0vajbgjogs" path="res://ui_assets/ui_steampuś/Rectangle 2.svg" id="2_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://conurqo70hy6e" path="res://ui_assets/ui_steampuś (1)/bateria.svg" id="3_irxef"]
+[ext_resource type="Texture2D" uid="uid://kuvfce0hntrs" path="res://ui_assets/ui_steampuś (1)/map_button.svg" id="4_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://tftl13rrbj24" path="res://ui_assets/ui_steampuś (1)/menu_ig.svg" id="5_n5rqp"]
+[ext_resource type="FontFile" uid="uid://qjs834eueehm" path="res://ui_assets/quantico/Quantico-Bold.ttf" id="5_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://cpb26tf8aopqq" path="res://ui_assets/ui_steampuś (1)/pasek proboszcza.svg" id="6_gs482"]
+[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="7_cxd00"]
+[ext_resource type="Texture2D" uid="uid://bo54egvg55x6" path="res://ui_assets/ui_steampuś (1)/Rectangle 11.svg" id="8_irxef"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_waa4j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nvb2n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ok7cu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e2l4f"]
+font = ExtResource("5_ok7cu")
+font_size = 34
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n5rqp"]
+
+[node name="UI" type="CanvasLayer" unique_id=1071640633]
+
+[node name="Panel" type="Panel" parent="." unique_id=2050032444]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_waa4j")
+
+[node name="Panel" type="Panel" parent="Panel" unique_id=2104517304]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+
+[node name="Rectangle3" type="Sprite2D" parent="Panel/Panel" unique_id=1212970614]
+texture = ExtResource("1_waa4j")
+
+[node name="Rectangle2" type="Sprite2D" parent="Panel/Panel" unique_id=113200197]
+texture = ExtResource("2_ok7cu")
+
+[node name="PanelContainer" type="Panel" parent="Panel" unique_id=1378307599]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_nvb2n")
+
+[node name="PopUpZnAku" type="Sprite2D" parent="Panel/PanelContainer" unique_id=1441508866]
+position = Vector2(596.0834, 230.9667)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("7_cxd00")
+
+[node name="DolnyPasek" type="Panel" parent="Panel/PanelContainer" unique_id=1153801137]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.85
+anchor_right = 1.0
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ok7cu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/PanelContainer/DolnyPasek" unique_id=578323249]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Container" type="MarginContainer" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer" unique_id=1054968068]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Container" unique_id=972476185]
+layout_mode = 2
+
+[node name="PasekProboszcza" type="Sprite2D" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Container/Panel" unique_id=1744669413]
+position = Vector2(521, -0.27996826)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_gs482")
+
+[node name="ColorRect" type="ColorRect" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Container/Panel/PasekProboszcza" unique_id=749965491]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -700.0
+offset_top = -28.333313
+offset_right = -754.6666
+offset_bottom = -51.666687
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Container/Panel/PasekProboszcza" unique_id=1664735605]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -736.5
+offset_top = -42.5
+offset_right = -736.5
+offset_bottom = -42.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Boszcz Pro Boss"
+label_settings = SubResource("LabelSettings_e2l4f")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer" unique_id=1698044445]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="TextureButton" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Panel" unique_id=190055067]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12900001
+anchor_right = 1.0
+offset_left = -43.965
+offset_top = -24.279968
+offset_right = -33.0
+offset_bottom = 60.72003
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("4_e2l4f")
+
+[node name="Panel2" type="Panel" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer" unique_id=244479601]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer2" type="TextureButton" parent="Panel/PanelContainer/DolnyPasek/HBoxContainer/Panel2" unique_id=517156100]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -26.279968
+offset_right = -58.0
+offset_bottom = 58.72003
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("5_n5rqp")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/PanelContainer" unique_id=1701509635]
+layout_mode = 0
+offset_top = 30.0
+offset_right = 357.0
+offset_bottom = 315.0
+scale = Vector2(0.58568895, 0.6029739)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/PanelContainer/MarginContainer" unique_id=362053523]
+layout_mode = 2
+
+[node name="Wskaźniki" type="TextureRect" parent="Panel/PanelContainer/MarginContainer/VBoxContainer" unique_id=1013383356]
+layout_mode = 2
+texture = ExtResource("8_irxef")
+
+[node name="HSeparator" type="HSeparator" parent="Panel/PanelContainer/MarginContainer/VBoxContainer" unique_id=115773696]
+layout_mode = 2
+theme_override_constants/separation = 16
+theme_override_styles/separator = SubResource("StyleBoxEmpty_n5rqp")
+
+[node name="Bateria" type="TextureRect" parent="Panel/PanelContainer/MarginContainer/VBoxContainer" unique_id=31134308]
+layout_mode = 2
+texture = ExtResource("3_irxef")
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="Panel/PanelContainer" unique_id=1077558117]
+visible = false
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
