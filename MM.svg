@@ -1,0 +1,47 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_1_2)">
+<rect width="1920" height="1080" fill="white"/>
+<rect width="1920" height="1080" fill="url(#paint0_linear_1_2)"/>
+<rect x="-167" y="-128" width="2236" height="1336" fill="url(#pattern0_1_2)"/>
+<path d="M130 15.5H1588C1763.35 15.5 1905.5 157.65 1905.5 333V950C1905.5 1013.24 1854.24 1064.5 1791 1064.5H333C157.65 1064.5 15.5 922.35 15.5 747V130C15.5 66.7634 66.7634 15.5 130 15.5Z" stroke="white" stroke-width="5"/>
+<rect x="166.5" y="338.5" width="394" height="79" rx="39.5" fill="white" stroke="url(#paint1_linear_1_2)" stroke-width="5"/>
+<rect x="166.5" y="442.5" width="274" height="79" rx="39.5" fill="white" stroke="url(#paint2_linear_1_2)" stroke-width="5"/>
+<rect x="166.5" y="546.5" width="274" height="79" rx="39.5" fill="white" stroke="url(#paint3_linear_1_2)" stroke-width="5"/>
+<rect x="166.5" y="650.5" width="274" height="79" rx="39.5" fill="white" stroke="url(#paint4_linear_1_2)" stroke-width="5"/>
+<path d="M244.959 379.8V368.48L249.599 365.8H259.719L264.359 368.48V373.8H258.759V370.6H250.559V377.28H259.719L264.359 379.96V391.52L259.719 394.2H249.199L244.559 391.52V386.2H250.159V389.4H258.759V382.48H249.599L244.959 379.8ZM281.93 370.8V394H276.33V370.8H268.77V366H289.49V370.8H281.93ZM304.872 366L314.872 394H309.352L307.232 387.96H296.752L294.632 394H289.112L299.112 366H304.872ZM301.952 373.04L298.432 383.16H305.512L302.032 373.04H301.952ZM340.105 394H333.945L327.945 383.44H324.465V394H318.865V366H334.025L338.665 368.68V380.76L334.025 383.44L340.105 394ZM324.465 370.8V378.64H333.065V370.8H324.465ZM356.226 370.8V394H350.626V370.8H343.066V366H363.786V370.8H356.226ZM388.591 384.2V379.4H398.791V391.52L394.151 394.2H382.831L378.191 391.52V368.48L382.831 365.8H394.151L398.791 368.48V374.2H393.191V370.6H383.791V389.4H393.191V384.2H388.591ZM418.153 366L428.153 394H422.633L420.513 387.96H410.033L407.913 394H402.393L412.393 366H418.153ZM415.233 373.04L411.713 383.16H418.793L415.313 373.04H415.233ZM455.706 394V375.52H455.626L449.306 394H443.986L437.626 375.28H437.546V394H432.146V366H439.586L446.626 386.6H446.706L453.706 366H461.106V394H455.706ZM473.488 382V389.2H484.648V394H467.888V366H484.648V370.8H473.488V377.2H482.248V382H473.488Z" fill="black"/>
+<path d="M149 62.5H1692C1778.98 62.5 1849.5 133.015 1849.5 220V920C1849.5 973.848 1805.85 1017.5 1752 1017.5H209C122.015 1017.5 51.5 946.985 51.5 860V160C51.5 106.152 95.1522 62.5 149 62.5Z" stroke="white" stroke-width="5"/>
+</g>
+<defs>
+<pattern id="pattern0_1_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_1_2" transform="matrix(0.0597496 0 0 0.1 -0.0078712 0)"/>
+</pattern>
+<linearGradient id="paint0_linear_1_2" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D5F9FF"/>
+<stop offset="1" stop-color="#B9FF8D"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_2" x1="164" y1="378" x2="563" y2="378" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2200FF"/>
+<stop offset="0.384613" stop-color="#00DDFF"/>
+<stop offset="0.745199" stop-color="#00FFB7"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_2" x1="164" y1="482" x2="443" y2="482" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.384613" stop-color="#00DDFF"/>
+<stop offset="0.745199" stop-color="#00FFB7"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1_2" x1="164" y1="586" x2="443" y2="586" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.384613" stop-color="#00DDFF"/>
+<stop offset="0.745199" stop-color="#00FFB7"/>
+</linearGradient>
+<linearGradient id="paint4_linear_1_2" x1="164" y1="690" x2="443" y2="690" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.384613" stop-color="#00DDFF"/>
+<stop offset="0.745199" stop-color="#00FFB7"/>
+</linearGradient>
+<clipPath id="clip0_1_2">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+<image id="image0_1_2" width="17" height="10" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAYAAABSfLWiAAAAZ0lEQVR4AazQQQ6AIAxE0dar6Vk4MSeRjRgQp42pbplIQv7upe0iPzxH8llHrsdgajM40mWXpkWYBuKAPtBkPwgAKZhmvoF0WwUTMH0R3MQBooE0TMH+QC5bBzdhGsiqSbclKVNDbgAAAP//xxkYUAAAAAZJREFUAwAl2g4kAxBN2wAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
