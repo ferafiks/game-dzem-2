@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_sjb42"]
 [ext_resource type="MeshLibrary" uid="uid://t5u308nnvmat" path="res://levelElements/level_mesh_2.tres" id="2_pdtm5"]
+[ext_resource type="PackedScene" uid="uid://d2jlwyolev7q0" path="res://levelElements/steampuss/steampuss13.glb" id="4_61w3m"]
 [ext_resource type="PackedScene" uid="uid://dk4m1buywhdof" path="res://levelElements/lights.tscn" id="4_ua5ty"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_sjb42"]
@@ -17,6 +18,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("WorldBoundaryShape3D_sjb42")
 
 [node name="GridMap" type="GridMap" parent="." unique_id=21996770]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 mesh_library = ExtResource("2_pdtm5")
 cell_size = Vector3(1, 1, 1)
 data = {
@@ -25,3 +27,5 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="lights" parent="." unique_id=1619908780 instance=ExtResource("4_ua5ty")]
+
+[node name="steampuss13" parent="." unique_id=945509587 instance=ExtResource("4_61w3m")]
