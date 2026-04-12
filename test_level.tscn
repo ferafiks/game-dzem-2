@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="7_6emce"]
 [ext_resource type="Texture2D" uid="uid://7pd71rcncwma" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.png" id="8_lowby"]
 [ext_resource type="Script" uid="uid://b3dinpgjrh671" path="res://cam.gd" id="9_6emce"]
+[ext_resource type="Texture2D" uid="uid://debrhw83am2c5" path="res://NAVYGACJA/p1.png" id="10_38et7"]
+[ext_resource type="Texture2D" uid="uid://bt2mt3b6pwtty" path="res://NAVYGACJA/p2.png" id="11_b7ax5"]
+[ext_resource type="Texture2D" uid="uid://bcum3jqj1twi" path="res://NAVYGACJA/p3.png" id="12_4bgwg"]
+[ext_resource type="Texture2D" uid="uid://dd0ur0idkphb1" path="res://NAVYGACJA/p4.png" id="13_2hfll"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -111,28 +115,33 @@ texture = SubResource("ViewportTexture_sb12i")
 script = ExtResource("9_6emce")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1852482486]
-visible = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_38et7")
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1377549932]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("11_b7ax5")
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=445080119]
 visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("12_4bgwg")
 
 [node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=551907440]
 visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("13_2hfll")
 
 [editable path="steampussy"]
 [editable path="Zrzut"]
