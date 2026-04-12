@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dqcf7l7lg7l58"]
 
+[ext_resource type="Script" uid="uid://dt7ntehp6yxe6" path="res://mm.gd" id="1_b51rn"]
 [ext_resource type="Texture2D" uid="uid://coucwqyek5jyb" path="res://ui_assets/ui_steampuś/Rectangle 1.svg" id="1_o3gpn"]
 [ext_resource type="Texture2D" uid="uid://bct0vajbgjogs" path="res://ui_assets/ui_steampuś/Rectangle 2.svg" id="2_2o7sm"]
 [ext_resource type="Texture2D" uid="uid://4yr2fobgubs5" path="res://ui_assets/ui_steampuś/Rectangle 3.svg" id="3_b51rn"]
@@ -19,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_b51rn")
 
 [node name="Tło" type="PanelContainer" parent="." unique_id=259627967]
 clip_contents = true
@@ -85,18 +87,50 @@ layout_mode = 2
 
 [node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer2" unique_id=1373566547]
 layout_mode = 2
+size_flags_horizontal = 0
 texture_normal = ExtResource("5_1c510")
+
+[node name="Label2" type="Label" parent="VBoxContainer/MarginContainer2/TextureButton2" unique_id=1724325188]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.5
+offset_top = -25.0
+offset_right = 52.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CREDITS"
+label_settings = SubResource("LabelSettings_b51rn")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=901775400]
 layout_mode = 2
 
 [node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer3" unique_id=1069093888]
 layout_mode = 2
+size_flags_horizontal = 0
 texture_normal = ExtResource("5_1c510")
 
-[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer" unique_id=1512684620]
-layout_mode = 2
+[node name="Label3" type="Label" parent="VBoxContainer/MarginContainer3/TextureButton2" unique_id=96938918]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+label_settings = SubResource("LabelSettings_b51rn")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/MarginContainer4" unique_id=696461899]
-layout_mode = 2
-texture_normal = ExtResource("5_1c510")
+[connection signal="pressed" from="VBoxContainer/MarginContainer/TextureButton" to="." method="_on_start"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer2/TextureButton2" to="." method="on_credits"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/TextureButton2" to="." method="_on_quit"]

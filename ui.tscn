@@ -3,11 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://4yr2fobgubs5" path="res://ui_assets/ui_steampuś/Rectangle 3.svg" id="1_waa4j"]
 [ext_resource type="Texture2D" uid="uid://bct0vajbgjogs" path="res://ui_assets/ui_steampuś/Rectangle 2.svg" id="2_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://conurqo70hy6e" path="res://ui_assets/ui_steampuś (1)/bateria.svg" id="3_irxef"]
+[ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="3_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://kuvfce0hntrs" path="res://ui_assets/ui_steampuś (1)/map_button.svg" id="4_e2l4f"]
 [ext_resource type="Texture2D" uid="uid://tftl13rrbj24" path="res://ui_assets/ui_steampuś (1)/menu_ig.svg" id="5_n5rqp"]
 [ext_resource type="FontFile" uid="uid://qjs834eueehm" path="res://ui_assets/quantico/Quantico-Bold.ttf" id="5_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://cpb26tf8aopqq" path="res://ui_assets/ui_steampuś (1)/pasek proboszcza.svg" id="6_gs482"]
-[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="7_cxd00"]
 [ext_resource type="Texture2D" uid="uid://bo54egvg55x6" path="res://ui_assets/ui_steampuś (1)/Rectangle 11.svg" id="8_irxef"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_waa4j"]
@@ -63,29 +63,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_nvb2n")
 
-[node name="Panel" type="Panel" parent="Panel/PanelContainer" unique_id=1077558117]
+[node name="Panel" parent="Panel/PanelContainer" unique_id=1065227777 instance=ExtResource("3_ok7cu")]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.7
-anchor_top = 0.25
-anchor_right = 0.98
-anchor_bottom = 0.7
-offset_left = -40.0
-offset_top = -40.0
-offset_right = -4.4000244
-offset_bottom = 1.4000244
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="TextureRect" type="TextureRect" parent="Panel/PanelContainer/Panel" unique_id=1144521970]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("7_cxd00")
-expand_mode = 5
+offset_right = -4.3999634
 
 [node name="DolnyPasek" type="Panel" parent="Panel/PanelContainer" unique_id=1153801137]
 layout_mode = 1
