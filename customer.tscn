@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://qkkiksge1seq"]
 
 [ext_resource type="Script" uid="uid://b83tjfvnglyx2" path="res://customer.gd" id="1_7tiyv"]
+[ext_resource type="PackedScene" uid="uid://cdmfh8viffwb4" path="res://levelElements/clyent/client.glb" id="2_r8ta2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tiyv"]
 albedo_color = Color(0, 1, 0, 1)
@@ -19,6 +20,7 @@ script = ExtResource("1_7tiyv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=122064011]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45458674, 0)
+visible = false
 mesh = SubResource("PrismMesh_8l5f2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1133539847]
@@ -27,6 +29,7 @@ shape = SubResource("ConcavePolygonShape3D_7tiyv")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1743519795]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0.45458674, 0.6102022)
+visible = false
 text = "CUSTYOSKJA"
 
 [node name="Area3D" type="Area3D" parent="." unique_id=519491581]
@@ -40,6 +43,8 @@ shape = SubResource("BoxShape3D_r8ta2")
 wait_time = 4096.0
 one_shot = true
 autostart = true
+
+[node name="client" parent="." unique_id=2021532640 instance=ExtResource("2_r8ta2")]
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
