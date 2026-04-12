@@ -5,11 +5,17 @@
 [ext_resource type="PackedScene" uid="uid://qkkiksge1seq" path="res://customer.tscn" id="3_f7g2b"]
 [ext_resource type="PackedScene" uid="uid://c7dsbary4yyof" path="res://area_znak_kierunek.tscn" id="5_sb12i"]
 [ext_resource type="PackedScene" uid="uid://bra3f5k16jj1t" path="res://zrzut.tscn" id="6_gbhdq"]
+[ext_resource type="PackedScene" uid="uid://vuap05imoy04" path="res://ui.tscn" id="6_lnbra"]
+[ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="7_6emce"]
+[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="8_lowby"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gojnm"]
 size = Vector2(1000, 1000)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_sb12i"]
+viewport_path = NodePath("SubViewport")
 
 [node name="TestLevel" type="Node3D" unique_id=2109588144]
 script = ExtResource("1_4ptq8")
@@ -51,6 +57,56 @@ target_customer = NodePath("../../Customer")
 
 [node name="Crate" parent="Zrzut2" index="0" unique_id=1698030415 node_paths=PackedStringArray("target_customer")]
 target_customer = NodePath("../../Customer")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=2134678915]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport" unique_id=1667714811]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 100, 0)
+projection = 1
+size = 30.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=670727123]
+
+[node name="UI" parent="CanvasLayer" unique_id=1071640633 instance=ExtResource("6_lnbra")]
+
+[node name="Panel" parent="CanvasLayer" unique_id=1065227777 instance=ExtResource("7_6emce")]
+
+[node name="Mapa" type="Panel" parent="CanvasLayer" unique_id=700135582]
+visible = false
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.3
+anchor_bottom = 0.7
+offset_left = -40.0
+offset_top = -40.0
+offset_right = -4.4000244
+offset_bottom = 1.4000244
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa" unique_id=983317374]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_lowby")
+expand_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect" unique_id=1815337015]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015
+anchor_top = 0.14
+anchor_right = 0.985
+anchor_bottom = 0.985
+offset_bottom = 4.613098
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_sb12i")
 
 [editable path="steampussy"]
 [editable path="Zrzut"]
