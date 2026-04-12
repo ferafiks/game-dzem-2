@@ -1,6 +1,5 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const GRAB_LIMIT = 4
@@ -42,6 +41,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("drop"):
 		if !$Hand.get_children().is_empty():
 			$Hand.get_children()[-1].drop()
+			$Hand.get_children()[-1].name = 'Crate' + str($Hand.get_children()[-1].get_instance_id())
 			$Hand.get_children()[-1].reparent($'..')
 			
 	

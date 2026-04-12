@@ -1,6 +1,8 @@
 extends RigidBody3D
 @export var target_customer: StaticBody3D
-
+var correct_zrzut
+func _ready() -> void:
+	correct_zrzut = get_parent()
 # Called when the node enters the scene tree for the first time.
 func take(node_pos):
 	rotation = Vector3.ZERO
@@ -20,6 +22,7 @@ func drop():
 func delivered():
 	var rodzenstwo_load = preload("res://particle_boom.tscn") 
 	var rodzenstwo = rodzenstwo_load.instantiate()
+	correct_zrzut.to_deliver -= 1
 	rodzenstwo.position = position
 	rodzenstwo.visible = true
 	rodzenstwo.emitting = true

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bra3f5k16jj1t"]
+
+[ext_resource type="Script" uid="uid://d0l28itjhk3sh" path="res://zrzut.gd" id="1_yfekd"]
+[ext_resource type="PackedScene" uid="uid://dsvbntut4fm2u" path="res://crate.tscn" id="2_bpfjy"]
+
+[node name="Zrzut" type="Node3D" unique_id=701562138]
+script = ExtResource("1_yfekd")
+
+[node name="Crate" parent="." unique_id=1698030415 instance=ExtResource("2_bpfjy")]

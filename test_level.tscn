@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cnwtlrwowfup6" path="res://test_level.gd" id="1_4ptq8"]
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_gojnm"]
-[ext_resource type="PackedScene" uid="uid://dsvbntut4fm2u" path="res://crate.tscn" id="2_1c2mv"]
 [ext_resource type="PackedScene" uid="uid://qkkiksge1seq" path="res://customer.tscn" id="3_f7g2b"]
 [ext_resource type="PackedScene" uid="uid://c7dsbary4yyof" path="res://area_znak_kierunek.tscn" id="5_sb12i"]
+[ext_resource type="PackedScene" uid="uid://bra3f5k16jj1t" path="res://zrzut.tscn" id="6_gbhdq"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -36,17 +36,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, 3.3954003, 2.50
 [node name="Camera3D" parent="steampussy" index="3" unique_id=1989415634]
 transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 9.536743e-07, 5.5406947, 3.6975923)
 
-[node name="Crate" parent="." unique_id=1698030415 node_paths=PackedStringArray("target_customer") instance=ExtResource("2_1c2mv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.4087868, -2.1600285)
-target_customer = NodePath("../Customer")
-
-[node name="Crate2" parent="." unique_id=2084052760 instance=ExtResource("2_1c2mv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2743149, 1.3170943, -4.911859)
-
 [node name="Customer" parent="." unique_id=495619890 instance=ExtResource("3_f7g2b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.543572, 1.580394, -6.4760303)
 
 [node name="Area_znak_kierunek" parent="." unique_id=1919238867 instance=ExtResource("5_sb12i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22841287, 0)
 
+[node name="Zrzut" parent="." unique_id=701562138 instance=ExtResource("6_gbhdq")]
+
+[node name="Crate" parent="Zrzut" index="0" unique_id=1698030415 node_paths=PackedStringArray("target_customer")]
+target_customer = NodePath("../../Customer")
+
+[node name="Zrzut2" parent="." unique_id=415706249 instance=ExtResource("6_gbhdq")]
+
+[node name="Crate" parent="Zrzut2" index="0" unique_id=1698030415 node_paths=PackedStringArray("target_customer")]
+target_customer = NodePath("../../Customer")
+
 [editable path="steampussy"]
+[editable path="Zrzut"]
+[editable path="Zrzut2"]
