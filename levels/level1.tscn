@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://qkkiksge1seq" path="res://customer.tscn" id="6_045es"]
 [ext_resource type="PackedScene" uid="uid://deebglaaojjlr" path="res://levelElements/cone.tscn" id="7_8hd6v"]
 [ext_resource type="PackedScene" path="res://ui.tscn" id="8_lf3p4"]
-[ext_resource type="PackedScene" uid="uid://c4gf2rwdmwi3n" path="res://znak_ui.tscn" id="9_yydhl"]
-[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="10_bekh1"]
+[ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="9_yydhl"]
+[ext_resource type="Texture2D" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="10_bekh1"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_sjb42"]
 
