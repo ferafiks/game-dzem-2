@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://vuap05imoy04" path="res://ui.tscn" id="6_lnbra"]
 [ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="7_6emce"]
 [ext_resource type="Texture2D" uid="uid://7pd71rcncwma" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.png" id="8_lowby"]
+[ext_resource type="Script" uid="uid://b3dinpgjrh671" path="res://cam.gd" id="9_6emce"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -72,6 +73,7 @@ size = 30.0
 [node name="Panel" parent="CanvasLayer" unique_id=1065227777 instance=ExtResource("7_6emce")]
 
 [node name="Mapa" type="Panel" parent="CanvasLayer" unique_id=700135582]
+unique_name_in_owner = true
 anchors_preset = -1
 anchor_left = 0.05
 anchor_top = 0.25
@@ -95,7 +97,7 @@ grow_vertical = 2
 texture = ExtResource("8_lowby")
 expand_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect" unique_id=1815337015]
+[node name="Cam" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect" unique_id=1815337015]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.015
@@ -106,6 +108,31 @@ offset_bottom = 4.613098
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("ViewportTexture_sb12i")
+script = ExtResource("9_6emce")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1852482486]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1377549932]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=445080119]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=551907440]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [editable path="steampussy"]
 [editable path="Zrzut"]

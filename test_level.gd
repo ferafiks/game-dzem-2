@@ -25,6 +25,7 @@ func _process(_delta: float) -> void:
 	elif lista_zrzutów[0].to_deliver == 0:
 		print(lista_zrzutów)
 		lista_zrzutów.pop_front()
+		%Mapa/TextureRect/Cam.get_children()[0].queue_free()
 		if len(lista_zrzutów) == 0:
 			print('win')
 			get_tree().quit()

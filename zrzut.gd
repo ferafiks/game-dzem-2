@@ -13,4 +13,5 @@ func zrzut():
 		rzecz.visible = true
 		rzecz.gravity_scale = 1
 		to_deliver += 1
+		
 	print(to_deliver)
