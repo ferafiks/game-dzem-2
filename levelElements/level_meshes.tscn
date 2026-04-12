@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://n6nexj7kkoao"]
+
+[ext_resource type="PackedScene" uid="uid://dktpibdbu8t4b" path="res://tree1.fbx" id="1_4iw7n"]
+
+[node name="hose" type="Node3D" unique_id=311768695]
+
+[node name="tree1" parent="." unique_id=194176437 instance=ExtResource("1_4iw7n")]
