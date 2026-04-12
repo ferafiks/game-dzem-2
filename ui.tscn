@@ -63,10 +63,29 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_nvb2n")
 
-[node name="PopUpZnAku" type="Sprite2D" parent="Panel/PanelContainer" unique_id=1441508866]
-position = Vector2(596.0834, 230.9667)
-scale = Vector2(0.6, 0.6)
+[node name="Panel" type="Panel" parent="Panel/PanelContainer" unique_id=1077558117]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_top = 0.25
+anchor_right = 0.98
+anchor_bottom = 0.7
+offset_left = -40.0
+offset_top = -40.0
+offset_right = -4.4000244
+offset_bottom = 1.4000244
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="Panel/PanelContainer/Panel" unique_id=1144521970]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("7_cxd00")
+expand_mode = 5
 
 [node name="DolnyPasek" type="Panel" parent="Panel/PanelContainer" unique_id=1153801137]
 layout_mode = 1
@@ -189,9 +208,3 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_n5rqp")
 layout_mode = 2
 texture = ExtResource("3_irxef")
 stretch_mode = 5
-
-[node name="Panel" type="Panel" parent="Panel/PanelContainer" unique_id=1077558117]
-visible = false
-layout_mode = 1
-offset_right = 40.0
-offset_bottom = 40.0
