@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PrzygodyStimpusia"
-run/main_scene="uid://cria8ktxtaq7j"
+run/main_scene="uid://dqcf7l7lg7l58"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
