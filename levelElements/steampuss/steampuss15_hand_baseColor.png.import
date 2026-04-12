@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cebgy6mlg5oc1"
-path.s3tc="res://.godot/imported/steampuss13_stickersBodyTexture.png-b5b8862c3d94fafceac55e191bf55143.s3tc.ctex"
+uid="uid://dvvb5dv2y5w7j"
+path.s3tc="res://.godot/imported/steampuss15_hand_baseColor.png-07294486583207486640a0f443d9a679.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1366a2882a6a49f5b43276e469845624"
+"md5": "eb45594f5a14609709d2554272d41d26"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_stickersBodyTexture.png"
-dest_files=["res://.godot/imported/steampuss13_stickersBodyTexture.png-b5b8862c3d94fafceac55e191bf55143.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_hand_baseColor.png"
+dest_files=["res://.godot/imported/steampuss15_hand_baseColor.png-07294486583207486640a0f443d9a679.s3tc.ctex"]
 
 [params]
 

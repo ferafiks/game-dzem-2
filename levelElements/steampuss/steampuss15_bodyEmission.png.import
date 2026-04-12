@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b253om1dkuhwr"
-path.s3tc="res://.godot/imported/steampuss13_body_metallic-body_roughness.png-fd86aabe4e99c30f20d40d4685b6f944.s3tc.ctex"
+uid="uid://b8usb1x5hf64o"
+path.s3tc="res://.godot/imported/steampuss15_bodyEmission.png-94de34af2c3b20647eb4ec15cbaa23dd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a87cf99659f0cb5b1e67b8d4770ae64f"
+"md5": "508f7a7a1b1a4720321dbe2cd8c5d72a"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_body_metallic-body_roughness.png"
-dest_files=["res://.godot/imported/steampuss13_body_metallic-body_roughness.png-fd86aabe4e99c30f20d40d4685b6f944.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_bodyEmission.png"
+dest_files=["res://.godot/imported/steampuss15_bodyEmission.png-94de34af2c3b20647eb4ec15cbaa23dd.s3tc.ctex"]
 
 [params]
 
