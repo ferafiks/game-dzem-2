@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://cnwtlrwowfup6" path="res://test_level.gd" id="1_pdpul"]
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_sjb42"]
 [ext_resource type="MeshLibrary" uid="uid://t5u308nnvmat" path="res://levelElements/level_mesh_2.tres" id="2_pdtm5"]
-[ext_resource type="PackedScene" uid="uid://dk4m1buywhdof" path="res://levelElements/lights.tscn" id="4_ua5ty"]
-[ext_resource type="PackedScene" path="res://zrzut.tscn" id="5_8hd6v"]
+[ext_resource type="PackedScene" path="res://levelElements/lights.tscn" id="4_ua5ty"]
+[ext_resource type="PackedScene" uid="uid://bra3f5k16jj1t" path="res://zrzut.tscn" id="5_8hd6v"]
 [ext_resource type="PackedScene" uid="uid://qkkiksge1seq" path="res://customer.tscn" id="6_045es"]
 [ext_resource type="PackedScene" uid="uid://deebglaaojjlr" path="res://levelElements/cone.tscn" id="7_8hd6v"]
 
@@ -84,7 +84,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, -13)
 target_customer = NodePath("../../Customer4")
 
 [node name="ground" type="CSGBox3D" parent="." unique_id=1947082820]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.51, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.120414734, -0.2610252, 0.24599266)
 size = Vector3(1000, 1, 1000)
 material = SubResource("StandardMaterial3D_pdpul")
 
