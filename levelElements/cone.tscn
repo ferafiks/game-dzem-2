@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://deebglaaojjlr"]
+
+[ext_resource type="PackedScene" uid="uid://hvuj6khjnval" path="res://levelElements/cone/trafficcon.glb" id="1_h5o6o"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_h5o6o"]
+radius = 4.3080363
+
+[node name="cone" type="Node3D" unique_id=857638952]
+
+[node name="trafficcon" parent="." unique_id=1446736758 instance=ExtResource("1_h5o6o")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1836951120]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1627173889]
+shape = SubResource("SphereShape3D_h5o6o")
