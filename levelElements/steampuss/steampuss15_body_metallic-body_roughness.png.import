@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qmlpupvpiurj"
-path.s3tc="res://.godot/imported/steampuss13_eyes_baseColor.png-ee98f5b7cc95300b6b7de502008c0f59.s3tc.ctex"
+uid="uid://d2vaei0b3171x"
+path.s3tc="res://.godot/imported/steampuss15_body_metallic-body_roughness.png-4dfe1b3fad0737415af7da0cabd532a3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a27e300736b9f9b7ea590abd52eb1ddc"
+"md5": "a87cf99659f0cb5b1e67b8d4770ae64f"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_eyes_baseColor.png"
-dest_files=["res://.godot/imported/steampuss13_eyes_baseColor.png-ee98f5b7cc95300b6b7de502008c0f59.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_body_metallic-body_roughness.png"
+dest_files=["res://.godot/imported/steampuss15_body_metallic-body_roughness.png-4dfe1b3fad0737415af7da0cabd532a3.s3tc.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csp2ee3xjdv65"
-path.s3tc="res://.godot/imported/steampuss13_balls_emission.png-ce428a58213ab1af215c4fa26b7bfd1d.s3tc.ctex"
+uid="uid://cq4v15cqmdjm2"
+path.s3tc="res://.godot/imported/steampuss15_spodek_baseColor.png-9437ff79592c724bb16f285d2244ef12.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "9685926c42de1d9ed694717373d5f948"
+"md5": "93ba9d668ce63278cac0c8e1a1814184"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_balls_emission.png"
-dest_files=["res://.godot/imported/steampuss13_balls_emission.png-ce428a58213ab1af215c4fa26b7bfd1d.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_spodek_baseColor.png"
+dest_files=["res://.godot/imported/steampuss15_spodek_baseColor.png-9437ff79592c724bb16f285d2244ef12.s3tc.ctex"]
 
 [params]
 

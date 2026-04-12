@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d2jlwyolev7q0"
-path="res://.godot/imported/steampuss13.glb-de54a1e0595546e8d62f0d4ccc7884a9.scn"
+uid="uid://ja45g07242su"
+path="res://.godot/imported/steampuss15.glb-69314f6ba4fc405910b83658899d6d50.scn"
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13.glb"
-dest_files=["res://.godot/imported/steampuss13.glb-de54a1e0595546e8d62f0d4ccc7884a9.scn"]
+source_file="res://levelElements/steampuss/steampuss15.glb"
+dest_files=["res://.godot/imported/steampuss15.glb-69314f6ba4fc405910b83658899d6d50.scn"]
 
 [params]
 

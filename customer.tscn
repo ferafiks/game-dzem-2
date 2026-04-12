@@ -12,25 +12,28 @@ material = SubResource("StandardMaterial3D_7tiyv")
 data = PackedVector3Array(0, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r8ta2"]
-size = Vector3(1.3376465, 0.25146484, 1.5043945)
+size = Vector3(4, 0.251, 4)
 
 [node name="Customer" type="StaticBody3D" unique_id=495619890]
 script = ExtResource("1_7tiyv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=122064011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45458674, 0)
 mesh = SubResource("PrismMesh_8l5f2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1133539847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45458674, 0)
 shape = SubResource("ConcavePolygonShape3D_7tiyv")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=1743519795]
-transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0.6102022)
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0.45458674, 0.6102022)
 text = "CUSTYOSKJA"
 
 [node name="Area3D" type="Area3D" parent="." unique_id=519491581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45458674, 0)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=149503055]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.042513013, -0.37426758, 1.0317833)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.374, 0)
 shape = SubResource("BoxShape3D_r8ta2")
 
 [node name="Timer" type="Timer" parent="." unique_id=118828181]

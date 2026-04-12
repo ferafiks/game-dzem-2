@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfg5lbjqj4yis"
-path.s3tc="res://.godot/imported/steampuss13_bodyEmission.png-911ac9aa8798d76375ad79455821e898.s3tc.ctex"
+uid="uid://djqd8qsvremto"
+path.s3tc="res://.godot/imported/steampuss15_head_emission.png-b003b5fc452489e39b2f4aea7c10115c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "508f7a7a1b1a4720321dbe2cd8c5d72a"
+"md5": "ff7faf000af3bbcb4b553f08e054d29f"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_bodyEmission.png"
-dest_files=["res://.godot/imported/steampuss13_bodyEmission.png-911ac9aa8798d76375ad79455821e898.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_head_emission.png"
+dest_files=["res://.godot/imported/steampuss15_head_emission.png-b003b5fc452489e39b2f4aea7c10115c.s3tc.ctex"]
 
 [params]
 

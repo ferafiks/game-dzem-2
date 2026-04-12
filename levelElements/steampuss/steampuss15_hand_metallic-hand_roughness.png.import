@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5o0jy26kdao5"
-path.s3tc="res://.godot/imported/steampuss13_body_baseColor.png-e838ac4b620221cc810efbae5150fb22.s3tc.ctex"
+uid="uid://da8t6r2tt8gac"
+path.s3tc="res://.godot/imported/steampuss15_hand_metallic-hand_roughness.png-51d64d2b5ad71333328025f8d05360fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "a42ab16690bf29423dc8d59cc23e5cee"
+"md5": "9db9dd4e2214f12f1564643af6c61e0f"
 }
 
 [deps]
 
-source_file="res://levelElements/steampuss/steampuss13_body_baseColor.png"
-dest_files=["res://.godot/imported/steampuss13_body_baseColor.png-e838ac4b620221cc810efbae5150fb22.s3tc.ctex"]
+source_file="res://levelElements/steampuss/steampuss15_hand_metallic-hand_roughness.png"
+dest_files=["res://.godot/imported/steampuss15_hand_metallic-hand_roughness.png-51d64d2b5ad71333328025f8d05360fa.s3tc.ctex"]
 
 [params]
 
