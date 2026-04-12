@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vp6lwt2gaypn"]
 
 [ext_resource type="Script" uid="uid://bdrht8oihnlx4" path="res://steampussy.gd" id="1_fm8vb"]
+[ext_resource type="PackedScene" uid="uid://ja45g07242su" path="res://levelElements/steampuss/steampuss15.glb" id="3_ui43p"]
 [ext_resource type="Script" uid="uid://cr8e6qeqyl26g" path="res://camera_3d.gd" id="4_p1h76"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6l50n"]
@@ -23,10 +24,12 @@ script = ExtResource("1_fm8vb")
 shape = SubResource("CapsuleShape3D_6l50n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=350341274]
+visible = false
 mesh = SubResource("CylinderMesh_6l50n")
 
 [node name="Label3D" type="Label3D" parent="." unique_id=153136377]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, -0.003430359, 1.3208172, 0.0039063394)
+visible = false
 text = "inpussy"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1989415634]
@@ -35,11 +38,15 @@ transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.70710
 top_level = true
 script = ExtResource("4_p1h76")
 
-[node name="Hand" type="Marker3D" parent="." unique_id=1524337348]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-
 [node name="Area3D" type="Area3D" parent="." unique_id=862536679]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1297166813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15551758, 0)
 shape = SubResource("CylinderShape3D_fm8vb")
+
+[node name="steampuss15" parent="." unique_id=1589141103 instance=ExtResource("3_ui43p")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, -1, 0)
+
+[node name="Hand" type="Marker3D" parent="steampuss15" unique_id=1524337348]
+unique_name_in_owner = true
+transform = Transform3D(1.6666665, 0, 0, 0, 1.6666665, 0, 0, 0, 1.6666665, 0, 2.1716652, 2.3020322)

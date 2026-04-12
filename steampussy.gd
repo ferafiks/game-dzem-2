@@ -5,7 +5,7 @@ const JUMP_VELOCITY = 4.5
 const GRAB_LIMIT = 4
 var crate_slowness : float
 func _physics_process(delta: float) -> void:
-	crate_slowness = 1 - (float($Hand.get_child_count())/GRAB_LIMIT)
+	crate_slowness = 1 - (float(%Hand.get_child_count())/GRAB_LIMIT)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -20,6 +20,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		
+	if direction != Vector3(0,0,0):
+		#detektyw kręci się kinda smooth
+		$steampuss15.rotation = Vector3(0 , lerp_angle($steampuss15.rotation[1],Vector2(direction[2],direction[0]).angle(),0.2) , 0)
+		
+		
 	move_and_slide()
 	
 	
@@ -28,20 +34,20 @@ func _physics_process(delta: float) -> void:
 		for thing in $Area3D.get_overlapping_bodies():
 			#print(thing)
 			if thing.is_in_group("grabbale") and thing.get_parent() is Marker3D == false:
-				if $Hand.get_child_count() < GRAB_LIMIT:
+				if %Hand.get_child_count() < GRAB_LIMIT:
 					var latest_marker
-					if $Hand.find_children('*','Marker3D',true):
-						latest_marker = $Hand.find_children('*','Marker3D',true)[-1].position
+					if %Hand.find_children('*','Marker3D',true):
+						latest_marker = %Hand.find_children('*','Marker3D',true)[-1].position
 					else:
 						latest_marker = Vector3.ZERO
 					print(latest_marker)
-					thing.reparent($Hand)
+					thing.reparent(%Hand)
 					thing.take(latest_marker)
 					break
 	if Input.is_action_just_pressed("drop"):
-		if !$Hand.get_children().is_empty():
-			$Hand.get_children()[-1].drop()
-			$Hand.get_children()[-1].name = 'Crate' + str($Hand.get_children()[-1].get_instance_id())
-			$Hand.get_children()[-1].reparent($'..')
+		if !%Hand.get_children().is_empty():
+			%Hand.get_children()[-1].drop()
+			%Hand.get_children()[-1].name = 'Crate' + str($%Hand.get_children()[-1].get_instance_id())
+			%Hand.get_children()[-1].reparent($'../..')
 			
 	

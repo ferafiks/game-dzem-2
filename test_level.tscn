@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bra3f5k16jj1t" path="res://zrzut.tscn" id="6_gbhdq"]
 [ext_resource type="PackedScene" uid="uid://vuap05imoy04" path="res://ui.tscn" id="6_lnbra"]
 [ext_resource type="PackedScene" uid="uid://dj7u8gjbxqgrn" path="res://znak_ui.tscn" id="7_6emce"]
-[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="8_lowby"]
+[ext_resource type="Texture2D" uid="uid://7pd71rcncwma" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.png" id="8_lowby"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1c2mv"]
 
@@ -72,7 +72,6 @@ size = 30.0
 [node name="Panel" parent="CanvasLayer" unique_id=1065227777 instance=ExtResource("7_6emce")]
 
 [node name="Mapa" type="Panel" parent="CanvasLayer" unique_id=700135582]
-visible = false
 anchors_preset = -1
 anchor_left = 0.05
 anchor_top = 0.25

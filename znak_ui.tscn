@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://c4gf2rwdmwi3n"]
+[gd_scene format=3 uid="uid://dj7u8gjbxqgrn"]
 
-[ext_resource type="Texture2D" uid="uid://coehbfq5kqeim" path="res://ui_assets/ui_steampuś (1)/pop up znAKU.svg" id="1_6acdv"]
+[ext_resource type="Texture2D" uid="uid://coepb87hdge15" path="res://ui_assets/ui_steampuś (1)/pop_up_znAKU-4.png" id="1_6acdv"]
 
 [node name="Panel" type="Panel" unique_id=1065227777]
+visible = false
 anchors_preset = -1
 anchor_left = 0.7
 anchor_top = 0.25
@@ -20,6 +21,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -400.0
+offset_right = -2.0
+offset_bottom = 136.26001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_6acdv")

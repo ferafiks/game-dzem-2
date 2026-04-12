@@ -20,8 +20,14 @@ func lose():
 	get_tree().paused = true
 
 func _process(_delta: float) -> void:
-	if lista_zrzutów[0].to_deliver == 0:
+	if len(lista_zrzutów) == 0:
+		print('win')
+	elif lista_zrzutów[0].to_deliver == 0:
 		print(lista_zrzutów)
 		lista_zrzutów.pop_front()
-		lista_zrzutów[0].zrzut()
+		if len(lista_zrzutów) == 0:
+			print('win')
+			get_tree().quit()
+		else:
+			lista_zrzutów[0].zrzut()
 	
