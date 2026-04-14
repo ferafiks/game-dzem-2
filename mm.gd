@@ -1,5 +1,5 @@
 extends Control
-var lvl = preload("res://test_level.tscn")
+var lvl = preload("res://levels/level1.tscn")
 var credits = preload("res://credits.tscn")
 
 func _on_quit() -> void:

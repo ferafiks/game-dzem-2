@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://cnwtlrwowfup6" path="res://test_level.gd" id="1_pdpul"]
 [ext_resource type="PackedScene" uid="uid://vp6lwt2gaypn" path="res://steampussy.tscn" id="1_sjb42"]
 [ext_resource type="MeshLibrary" uid="uid://t5u308nnvmat" path="res://levelElements/level_mesh_2.tres" id="2_pdtm5"]
-[ext_resource type="PackedScene" uid="uid://dk4m1buywhdof" path="res://levelElements/lights.tscn" id="4_ua5ty"]
-[ext_resource type="PackedScene" path="res://zrzut.tscn" id="5_8hd6v"]
+[ext_resource type="PackedScene" path="res://levelElements/lights.tscn" id="4_ua5ty"]
+[ext_resource type="PackedScene" uid="uid://bra3f5k16jj1t" path="res://zrzut.tscn" id="5_8hd6v"]
 [ext_resource type="PackedScene" uid="uid://qkkiksge1seq" path="res://customer.tscn" id="6_045es"]
 [ext_resource type="PackedScene" uid="uid://deebglaaojjlr" path="res://levelElements/cone.tscn" id="7_8hd6v"]
 [ext_resource type="PackedScene" uid="uid://vuap05imoy04" path="res://ui.tscn" id="8_lf3p4"]
@@ -21,8 +21,25 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdpul"]
 albedo_color = Color(0.37636495, 0.62868196, 0.5242966, 1)
 
+[sub_resource type="Environment" id="Environment_a5s8o"]
+
 [sub_resource type="ViewportTexture" id="ViewportTexture_8bcou"]
 viewport_path = NodePath("SubViewport")
+
+[sub_resource type="Environment" id="Environment_jq2cn"]
+background_mode = 1
+background_color = Color(0, 0.3137255, 0.30588236, 1)
+ambient_light_source = 1
+tonemap_mode = 1
+tonemap_white = 2.0
+ssao_enabled = true
+fog_enabled = true
+fog_light_color = Color(0, 0.3137255, 0.30588236, 1)
+fog_density = 0.05
+adjustment_enabled = true
+adjustment_brightness = 1.1
+adjustment_contrast = 1.25
+adjustment_saturation = 1.4
 
 [node name="level1" type="Node3D" unique_id=301324010]
 script = ExtResource("1_pdpul")
@@ -110,6 +127,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.160805, 0.20000005, -41.65
 [node name="Camera3D" type="Camera3D" parent="SubViewport" unique_id=1677013975]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 27.41983, 100, 6)
 cull_mask = 1048573
+environment = SubResource("Environment_a5s8o")
 projection = 1
 size = 111.0
 
@@ -158,6 +176,7 @@ script = ExtResource("10_8bcou")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=20131878]
 visible = false
+modulate = Color(0.11764706, 0.2509804, 0, 0.6666667)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -169,6 +188,7 @@ expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1075969562]
 visible = false
+modulate = Color(0.11764706, 0.2509804, 0, 0.6666667)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -180,6 +200,7 @@ expand_mode = 1
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=1197228840]
 visible = false
+modulate = Color(0.11764706, 0.2509804, 0, 0.6666667)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -191,6 +212,7 @@ expand_mode = 1
 
 [node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Mapa/TextureRect/Cam" unique_id=500843276]
 visible = false
+modulate = Color(0.11764706, 0.2509804, 0, 0.6666667)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -199,6 +221,9 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("15_ls4ot")
 expand_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=461422656]
+environment = SubResource("Environment_jq2cn")
 
 [editable path="Zrzut"]
 [editable path="Zrzut2"]

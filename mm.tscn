@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqcf7l7lg7l58"]
 
-[ext_resource type="Script" path="res://mm.gd" id="1_b51rn"]
+[ext_resource type="Script" uid="uid://dt7ntehp6yxe6" path="res://mm.gd" id="1_b51rn"]
 [ext_resource type="Texture2D" uid="uid://coucwqyek5jyb" path="res://ui_assets/ui_steampuś/Rectangle 1.svg" id="1_o3gpn"]
 [ext_resource type="Texture2D" uid="uid://bct0vajbgjogs" path="res://ui_assets/ui_steampuś/Rectangle 2.svg" id="2_2o7sm"]
 [ext_resource type="Texture2D" uid="uid://4yr2fobgubs5" path="res://ui_assets/ui_steampuś/Rectangle 3.svg" id="3_b51rn"]
@@ -31,19 +31,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Rectangle1" type="Sprite2D" parent="Tło" unique_id=1749607004]
-position = Vector2(577, 325)
-scale = Vector2(0.6, 0.6)
+[node name="Rectangle1" type="TextureRect" parent="Tło" unique_id=232228832]
+layout_mode = 2
 texture = ExtResource("1_o3gpn")
 
-[node name="Rectangle2" type="Sprite2D" parent="Tło" unique_id=1600938781]
-position = Vector2(572.5, 325.2)
-scale = Vector2(0.6, 0.6)
+[node name="Rectangle2" type="TextureRect" parent="Tło" unique_id=450485242]
+layout_mode = 2
 texture = ExtResource("2_2o7sm")
 
-[node name="Rectangle3" type="Sprite2D" parent="Tło" unique_id=1804068414]
-position = Vector2(574.5, 332.19998)
-scale = Vector2(0.6, 0.6)
+[node name="Rectangle3" type="TextureRect" parent="Tło" unique_id=1558104401]
+layout_mode = 2
 texture = ExtResource("3_b51rn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=440129589]
